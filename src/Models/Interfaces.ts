@@ -25,6 +25,7 @@ export interface JSONInterfacePhotosBySolResponse {
     earth_date: string;
     camera_name: string;
 }
+
 export interface RoversCamera {
     name: string;
     full_name: string;
@@ -39,7 +40,7 @@ export interface RoversInterfaceRequest {
     max_sol: number;
     max_date: string;
     total_photos: number;
-    cameras:  RoversCamera[];
+    cameras: RoversCamera[];
 }
 
 export interface RoversInterfaceResponse {
@@ -47,7 +48,7 @@ export interface RoversInterfaceResponse {
     name: string;
     status: string;
     max_sol: number;
-    cameras:  RoversCamera[];
+    cameras: RoversCamera[];
 }
 
 export interface Param {
