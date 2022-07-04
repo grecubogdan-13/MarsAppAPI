@@ -1,6 +1,6 @@
-import {JSONInterfacePhotosBySolRequest, RoversCamera, RoversInterfaceRequest} from "./Interfaces";
+import {JSONInterfacePhotosBySolRequest, RoversCamera, RoversInterfaceRequest} from "../../Models/Interfaces";
 
-export function roversHTML (roverData: RoversInterfaceRequest) {
+export function roversHTML(roverData: RoversInterfaceRequest) {
     let html = '';
     html = html + "Id: " + roverData.id.toString() + "<br/>" + "Name: " + roverData.name + "<br/>" + "Status: " +
         roverData.status + "<br/>" + "Maximum day: " + roverData.max_sol + "<br/>" + "Cameras: <br/>";
@@ -11,7 +11,7 @@ export function roversHTML (roverData: RoversInterfaceRequest) {
     return html;
 }
 
-export function photosHTML (photoArray: JSONInterfacePhotosBySolRequest[]) {
+export function photosHTML(photoArray: JSONInterfacePhotosBySolRequest[]) {
     let html = '';
     photoArray.forEach(function (d: JSONInterfacePhotosBySolRequest) {
         html = html + "Id: " + d.id + "<br/>" + "<img src ='" + d.img_src + "' /><br/><br/>"

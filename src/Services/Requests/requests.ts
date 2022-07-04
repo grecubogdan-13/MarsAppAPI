@@ -1,5 +1,5 @@
-import {Param} from "./Interfaces";
-import {checkNames} from "./Utils";
+import {Param} from "../../Models/Interfaces";
+import {checkNames} from "../../Utils/Utils";
 
 const API_KEY = "TxbNgclp1JXLSnghP5ecigSdEUvdMNcabY3p1lno";
 const BASE_API = "https://api.nasa.gov/mars-photos/api/v1/";

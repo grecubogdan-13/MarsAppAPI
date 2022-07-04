@@ -56,3 +56,7 @@ export interface Param {
     camera?: string;
     sol?: string;
 }
+
+export interface JSONInterfacePhotosList {
+    photos: JSONInterfacePhotosBySolResponse[];
+}
