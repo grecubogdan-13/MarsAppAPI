@@ -10,6 +10,9 @@ import {
 const app = express();
 const port = 8000;
 
+const cors = require('cors');
+app.use(cors());
+
 app.use(express.json());
 const router = express.Router();
 router.get('/test', test);
