@@ -27,6 +27,7 @@ export interface JSONInterfacePhotosBySolResponse {
 }
 
 export interface RoversCamera {
+    id: number
     name: string;
     full_name: string;
 }

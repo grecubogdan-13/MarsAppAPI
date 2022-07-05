@@ -33,3 +33,5 @@ app.get('/rovers/:rover_name/sol/:sol/camera/:camera/photos/html', HTMLNameSolAn
 app.get('/rovers/:rover_name/html', HTMLRover);
 
 app.get('/rovers/:rover_name', JSONRover);
+
+app.get('/rovers/', (req, res) => {res.send("{\"error\": []}")});
